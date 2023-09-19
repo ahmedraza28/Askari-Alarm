@@ -49,7 +49,8 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
       vibrate = true;
       volumeMax = true;
       showNotification = true;
-      assetAudio = 'assets/marimba.mp3';
+      assetAudio =
+          'assets/Azaan E Fajr - Full Audio  Aqeel Khan  Amjad Nadeem  Islamic Songs 2022.mp3';
     } else {
       selectedTime = TimeOfDay(
         hour: widget.alarmSettings!.dateTime.hour,
@@ -100,7 +101,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
       vibrate: vibrate,
       volumeMax: volumeMax,
       notificationTitle: showNotification ? 'Alarm example' : null,
-      notificationBody: showNotification ? 'Your alarm ($id) is ringing' : null,
+      notificationBody: showNotification ? 'Your alarm is ringing' : null,
       assetAudioPath: assetAudio,
       stopOnNotificationOpen: false,
     );
@@ -239,25 +240,27 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
                 value: assetAudio,
                 items: const [
                   DropdownMenuItem<String>(
-                    value: 'assets/marimba.mp3',
-                    child: Text('Marimba'),
+                    value:
+                        'assets/Azaan E Fajr - Full Audio  Aqeel Khan  Amjad Nadeem  Islamic Songs 2022.mp3',
+                    child: Text('Azan 1'),
                   ),
                   DropdownMenuItem<String>(
-                    value: 'assets/nokia.mp3',
-                    child: Text('Nokia'),
+                    value:
+                        'assets/Most Beautiful Azaan  Fascinating Voice  Arabic TV Show.mp3',
+                    child: Text('Azan 2'),
                   ),
-                  DropdownMenuItem<String>(
-                    value: 'assets/mozart.mp3',
-                    child: Text('Mozart'),
-                  ),
-                  DropdownMenuItem<String>(
-                    value: 'assets/star_wars.mp3',
-                    child: Text('Star Wars'),
-                  ),
-                  DropdownMenuItem<String>(
-                    value: 'assets/one_piece.mp3',
-                    child: Text('One Piece'),
-                  ),
+                  // DropdownMenuItem<String>(
+                  //   value: 'assets/mozart.mp3',
+                  //   child: Text('Mozart'),
+                  // ),
+                  // DropdownMenuItem<String>(
+                  //   value: 'assets/star_wars.mp3',
+                  //   child: Text('Star Wars'),
+                  // ),
+                  // DropdownMenuItem<String>(
+                  //   value: 'assets/one_piece.mp3',
+                  //   child: Text('One Piece'),
+                  // ),
                 ],
                 onChanged: (value) => setState(() => assetAudio = value!),
               ),

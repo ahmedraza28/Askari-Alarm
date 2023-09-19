@@ -15,7 +15,7 @@ class ExampleAlarmRingScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text(
-              "You alarm (${alarmSettings.id}) is ringing...",
+              "You alarm is ringing...",
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const Text("🔔", style: TextStyle(fontSize: 50)),
@@ -35,7 +35,7 @@ class ExampleAlarmRingScreen extends StatelessWidget {
                           now.minute,
                           0,
                           0,
-                        ).add(const Duration(minutes: 1)),
+                        ).add(const Duration(minutes: 5)),
                       ),
                     ).then((_) => Navigator.pop(context));
                   },
