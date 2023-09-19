@@ -100,7 +100,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
       loopAudio: loopAudio,
       vibrate: vibrate,
       volumeMax: volumeMax,
-      notificationTitle: showNotification ? 'Alarm example' : null,
+      notificationTitle: showNotification ? 'Alarm' : null,
       notificationBody: showNotification ? 'Your alarm is ringing' : null,
       assetAudioPath: assetAudio,
       stopOnNotificationOpen: false,

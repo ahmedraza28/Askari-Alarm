@@ -132,7 +132,8 @@ class _ExampleAlarmHomeScreenState extends State<ExampleAlarmHomeScreen> {
                 final alarmSettings = AlarmSettings(
                   id: 42,
                   dateTime: DateTime.now(),
-                  assetAudioPath: 'assets/marimba.mp3',
+                  assetAudioPath:
+                      'assets/Azaan E Fajr - Full Audio  Aqeel Khan  Amjad Nadeem  Islamic Songs 2022.mp3',
                   volumeMax: false,
                 );
                 Alarm.set(alarmSettings: alarmSettings);
