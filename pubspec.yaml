@@ -1,5 +1,5 @@
 name: alarm_example
-description: Demonstrates how to use the alarm plugin.
+description: An alarm app with Azan tones.
 version: 0.1.2
 
 environment:
